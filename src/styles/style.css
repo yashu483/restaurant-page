@@ -1,15 +1,48 @@
-*{
+* {
     box-sizing: border-box;
 }
+:root{
+    font-family: "jet-brain-mono" , "playfair-display",system-ui;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
-/* header > img.social-media-icons[alt = "insta-logo"],
-header > img.social-media-icons[alt = "twitter-logo"]{
+@font-face {
+    font-family: "jet-brain-mono";
+    src: url("./../resources/JetBrainsMono-Regular.woff") format("woff"),
+        url("./../resources/JetBrainsMono-Regular.woff2") format("woff2");
+}
 
-    width: 1rem;
-    height: 1rem;
-} */
+@font-face {
+    font-family: 'playfair-display';
+    src: url("./../resources/PlayfairDisplay-Regular.woff") format("woff"),
+        url("./../resources/PlayfairDisplay-Regular.woff2") format("woff2");
+}
 
-img{
+#main-container {
+    /* main-container default design for HOME tab */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./../resources/website-home-tab.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* header section  */
+
+/* header section ends */
+/* HOME tab section start */
+
+.social-media-icons {
     width: 1.1rem;
     height: 1.1rem;
 }
