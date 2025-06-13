@@ -42,6 +42,7 @@ body {
     grid-template-rows: max-content 1fr;
 }
 
+
 /* header section  */
 header {
     grid-row: 1;
@@ -50,13 +51,16 @@ header {
     align-items: center;
     gap: 2rem;
     padding-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 #hotel-name {
     font-size: 3.2rem;
     font-weight: 800;
 }
-
+#hotel-name:hover{
+    color: gold;
+}
 header>nav {
     display: flex;
     gap: 2rem;
@@ -83,4 +87,135 @@ header>nav>button:active {
 }
 
 /* header section ends */
+
+#content {
+    display: flex;
+    grid-row: 2;
+}
+
 /* HOME tab section start */
+
+
+#home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#tags-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    padding: 0px 10vw;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#tags-container>div {
+    font-size: 6rem;
+    color: white;
+    font-weight: 900;
+    text-decoration: underline white 6px;
+    text-underline-offset: 1rem;
+}
+
+#tags-container>div:hover {
+    color: green;
+    text-decoration: underline green 6px;
+
+}
+
+#address-in-home-tab {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+#address-in-home-tab:hover{
+    color: orange;
+}
+/* HOME tab section end */
+
+/* footer section starts */
+h2,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 7vh 15vw;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+footer>div {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 5rem;
+}
+
+#timing>p {
+    margin: 0;
+}
+
+#timing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+#footer-social-media>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#reservation {
+    font-size: 1.1rem;
+    text-decoration: underline grey 1px;
+    text-underline-offset: 2px;
+}
