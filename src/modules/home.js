@@ -6,7 +6,7 @@ const Home = (function () {
     const header = document.querySelector("header");
 
     function removePrevious() {
-        while (content.firstChild) { 
+        while (content.firstChild) {
             content.removeChild(content.firstChild)
         }
     }
@@ -40,6 +40,7 @@ const Home = (function () {
         content.appendChild(home);
     };
     function changeStyles() {
+        mainContainer.classList.remove("menu-tab", "reservation-tab-open");
         mainContainer.style.padding = "5vh 6vh";
         mainContainer.style.width = "100vw";
         mainContainer.style.height = "100vh"

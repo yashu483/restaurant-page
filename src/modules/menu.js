@@ -106,6 +106,7 @@ const Menu = (function () {
     };
     function changeStyles() {
         mainContainer.classList.remove("home-tab-open");
+        mainContainer.classList.remove("reservation-tab-open");
         mainContainer.classList.add("menu-tab");
         mainContainer.style.padding = "0"
         header.style.padding = "5vh 6vw"

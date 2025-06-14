@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <title>DÉLICIOUSES</title>
 </head>
 
@@ -23,11 +24,12 @@
         </header>
         <div id="content">
             <div id="reservation-container">
-                <div>
+                <div id="reservation-form">
                     <div id="reservation-headline">MAKE A RESERVATION</div>
-                    <div>Dive into a world of rich flavors, warm ambiance,
+                    <div id="reservation-info">Dive into a world of rich flavors 🍷, warm ambiance,
                         and unforgettable moments. Whether it’s a date night or a family dinner — we’ve got your table
-                        ready.</div>
+                        ready <span id="wine-emoji">🥂</span>
+                    </div>
                     <div id="form-container">
                         <form action="">
                             <div id="form-control">
@@ -50,7 +52,7 @@
                                 </div>
                                 <div>
                                     <label for="time">Time</label>
-                                    <input type="time" name="" id="">
+                                    <input type="time" name="time" id="time">
                                 </div>
                             </div>
                             <div id="buttons">
@@ -59,7 +61,8 @@
                         </form>
                     </div>
                 </div>
-                <div></div>
+                <div id="hall-image">
+                </div>
             </div>
             <!-- <div id="menu">
                 <div id="menu-tagline">What's on your Mind?</div>
