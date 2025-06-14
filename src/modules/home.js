@@ -41,8 +41,12 @@ const Home = (function () {
     };
     function changeStyles() {
         mainContainer.style.padding = "5vh 6vh";
+        mainContainer.style.width = "100vw";
+        mainContainer.style.height = "100vh"
         header.style.padding = " 0 0 5rem 0";
         header.classList.remove("header-in-menu")
+        const body = document.querySelector("body");
+        body.style.backgroundColor = "white"
     };
     return {
         removePrevious,

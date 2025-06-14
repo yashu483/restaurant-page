@@ -1,4 +1,93 @@
-.reservation-tab-open{
+.reservation-tab-open {
     width: max-content;
     height: max-content;
+    padding: 0;
+}
+
+#reservation-container {
+    width: 100vw;
+    grid-row: 2;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 8rem 5rem;
+}
+
+#reservation-form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+#reservation-info {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 6rem;
+    text-align: center;
+}
+
+#wine-emoji{
+    font-size: 1.5rem;
+}
+
+#reservation-headline {
+    font-size: 4rem;
+    font-weight: 800;
+    transform: skewX(-5deg);
+}
+
+#form-container>form {
+    display: flex;
+    margin-bottom: 6rem;
+    width: max-content;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+
+#form-control {
+    display: flex;
+    border: 1px solid grey;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 2rem;
+    flex-wrap: wrap;
+}
+
+#form-control>div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+#form-control label{
+color: gray;
+}
+#form-control select,
+#form-control input{
+    /* height: 20px; */
+    width: 150px;
+    font-size: 0.9rem;
+    padding: 3px 10px;
+}
+
+#form-container>form button {
+    width: 250px;
+    height: 100%;
+    color: white;
+    background-color: black;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+#hall-image {
+    height: 50vh;
+    width: 85vw;
+    background-image: url("./../resources/hall.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
 }

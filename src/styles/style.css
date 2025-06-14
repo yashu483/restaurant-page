@@ -29,7 +29,6 @@ body {
 
 #main-container {
     /* main-container default design for HOME tab */
-
     background-attachment: scroll;
     background-size: cover;
     box-sizing: border-box;
@@ -42,6 +41,8 @@ body {
 .home-tab-open {
     background-image: url("./../resources/website-home-tab.jpg"); 
     padding:   5vh 6vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* header section  */
