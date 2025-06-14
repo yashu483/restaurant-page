@@ -31,8 +31,6 @@ body {
     /* main-container default design for HOME tab */
     height: 100vh;
     width: 100vw;
-    padding: 5vh 6vw;
-    background-image: url("./../resources/website-home-tab.jpg");
     background-attachment: scroll;
     background-size: cover;
     box-sizing: border-box;
@@ -42,6 +40,10 @@ body {
     grid-template-rows: max-content 1fr;
 }
 
+.home-tab-open {
+    background-image: url("./../resources/website-home-tab.jpg"); 
+    padding:   5vh 6vw;
+}
 
 /* header section  */
 header {
@@ -50,7 +52,8 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
+    padding: 5vh 6vw;
     flex-wrap: wrap;
 }
 
@@ -58,9 +61,11 @@ header {
     font-size: 3.2rem;
     font-weight: 800;
 }
-#hotel-name:hover{
+
+#hotel-name:hover {
     color: gold;
 }
+
 header>nav {
     display: flex;
     gap: 2rem;
@@ -98,7 +103,7 @@ header>nav>button:active {
 
 #home {
     flex: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
@@ -135,9 +140,10 @@ header>nav>button:active {
     justify-content: center;
 }
 
-#address-in-home-tab:hover{
+#address-in-home-tab:hover {
     color: orange;
 }
+
 /* HOME tab section end */
 
 /* footer section starts */

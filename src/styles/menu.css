@@ -1,0 +1,123 @@
+#menu {
+    flex: 1;
+    color: black;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    /* border-bottom: 1px solid gray; */
+
+}
+
+.header-in-menu {
+    background-image: url("./../resources/header-background.jpg");
+    background-size: cover;
+}
+
+#menu-tagline {
+    grid-row: 1;
+    padding: 5vh 5vw 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#menu-card-container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5vh 5vw;
+    gap: 50px;
+}
+
+.menu-card {
+    display: flex;
+    /* width: 275px; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.menu-card:hover,
+.menu-card:active {
+    transform: translateY(-5px);
+    transition-timing-function: ease-out;
+}
+
+.food-image {
+    width: 250px;
+    height: 230px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.8);
+    /* 👇 Bottom inner shadow */
+    border-radius: 8px;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding: 5px 0.5rem;
+}
+
+#burger {
+    background-image: url("./../resources/burger.jpg");
+}
+
+#pizza {
+    background-image: url("./../resources/pizza.jpg");
+}
+
+#chicken {
+    background-image: url("./../resources/chicken.jpg");
+}
+
+#lobester {
+    background-image: url("./../resources/lobster.jpg");
+}
+
+#noodle {
+    background-image: url("./../resources/noodle.jpg");
+}
+
+#ice-cream {
+    background-image: url("./../resources/ice-cream.jpg");
+}
+
+#momo {
+    background-image: url("./../resources/delicious-meal-table.jpg");
+}
+
+#salad {
+    background-image: url("./../resources/top-view-vegan-salad-with-fresh-ingredients-plate-pepper-black-cutting-board.jpg");
+}
+
+
+.food-info {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding: 0.5rem 0.5rem;
+}
+
+.food-info>div {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.food-info>button {
+    color: white;
+    background-color: green;
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+.food-info>button:hover,
+.food-info>button:active {
+    background-color: red;
+}

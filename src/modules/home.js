@@ -1,0 +1,54 @@
+// import homeTabImage from "./../resources/website-home-tab.jpg";
+
+const Home = (function () {
+    const mainContainer = document.querySelector("#main-container")
+    const content = document.querySelector("#content");
+    const header = document.querySelector("header");
+
+    function removePrevious() {
+        while (content.firstChild) { 
+            content.removeChild(content.firstChild)
+        }
+    }
+    function create() {
+        const home = document.createElement("div");
+        home.setAttribute("id", "home");
+
+        const tagsContainer = document.createElement("div");
+        tagsContainer.setAttribute("id", "tags-container");
+
+        const eat = document.createElement("div");
+        eat.textContent = "EAT";
+        tagsContainer.appendChild(eat);
+
+        const drink = document.createElement("div");
+        drink.textContent = "DRINK";
+        tagsContainer.appendChild(drink);
+
+        const enjoy = document.createElement("div");
+        enjoy.textContent = "ENJOY";
+        tagsContainer.appendChild(enjoy);
+
+        home.appendChild(tagsContainer);
+
+        const homeAddress = document.createElement("div");
+        homeAddress.setAttribute("id", "address-in-home-tab");
+        homeAddress.textContent = "123-DEMO STREET - DEMO CITY, EARTH 42 - (922-000-000)"
+        home.appendChild(homeAddress);
+        home.style.display = "flex"
+        mainContainer.classList.add("home-tab-open")
+        content.appendChild(home);
+    };
+    function changeStyles() {
+        mainContainer.style.padding = "5vh 6vh";
+        header.style.padding = " 0 0 5rem 0";
+        header.classList.remove("header-in-menu")
+    };
+    return {
+        removePrevious,
+        create,
+        changeStyles
+    }
+})();
+
+export { Home };
