@@ -1,4 +1,5 @@
 # Restaurant Website Project
+### [Live Preview](https://yashu483.github.io/restaurant-page/)
 ## Introduction
 This is 'Restaurant Website' Project we had to build as submission after learning basics of using npm, webpack, and ES6 modules.
 ## Limitations
